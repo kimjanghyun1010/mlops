@@ -1,5 +1,5 @@
 name: Regression_Test
 on: [push]
 jobs:
-  regression_test:
-    runs-on: [self-hosted]
+  build:
+    runs-on: self-hosted
