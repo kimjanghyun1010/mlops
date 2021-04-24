@@ -1,5 +1,24 @@
 name: Regression_Test
 on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-os
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: Install dependencies
+      run: npm install
+    - name: Backup velog
+      run: |
+        node app.js -u somnode
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: Upload velog backup files
+        path: |
+          backup-somnode     
