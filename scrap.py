@@ -26,4 +26,4 @@ for title in datas:
 with open(os.path.join(BASE_DIR, 'scrap.json'), 'w+',encoding='utf-8') as json_file:
     json.dump(data, json_file, ensure_ascii = False, indent='\t')
 
-print('뉴스기사 스크래핑 끝')
+print('뉴스기사 스크래핑 끝끝')
