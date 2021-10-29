@@ -29,7 +29,7 @@ jobs:
         git add news.json
         git commit -m "Auto - Update data with Scraping" # 커밋 메세지
     - name: Push
-      uses: ad-m/github-push-action@main
+      uses: ad-m/github-push-action@master
       with:
-        branch: 'main'
-        github_token: ${{ secrets.GITHUB_TOKEN }} 
+        branch: 'master'
+        github_token: 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
